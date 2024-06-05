@@ -32,20 +32,20 @@
             android:background="@drawable/arredondar_canto_cadastro"
             android:padding="18dp"
             android:inputType="textPassword"
-            android:id="@+id/text_input"/>
-
+            android:id="@+id/codigo"/>
 
 
         <Button
+            android:id="@+id/verificarcod"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Verificar"
-            android:backgroundTint="@color/white"
-            android:textColor="#3B84F1"
-            android:padding="18dp"
             android:layout_marginTop="32dp"
-            android:textSize="20sp"
-            android:id="@+id/verificaremail_bnt"/>
+            android:backgroundTint="@color/white"
+            android:onClick="trocadesenha"
+            android:padding="18dp"
+            android:text="Verificar"
+            android:textColor="#3B84F1"
+            android:textSize="20sp" />
 
     </LinearLayout>
 

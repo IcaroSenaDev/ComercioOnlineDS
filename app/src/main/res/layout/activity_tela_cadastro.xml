@@ -33,7 +33,7 @@
             android:background="@drawable/arredondar_canto_cadastro"
             android:padding="18dp"
             android:inputType="text"
-            android:id="@+id/username_input"/>
+            android:id="@+id/nomeusuario"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -46,7 +46,7 @@
             android:background="@drawable/arredondar_canto_cadastro"
             android:padding="18dp"
             android:inputType="textPassword"
-            android:id="@+id/password_input"/>
+            android:id="@+id/senha"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -59,18 +59,19 @@
             android:background="@drawable/arredondar_canto_cadastro"
             android:padding="18dp"
             android:inputType="textPassword"
-            android:id="@+id/password_input"/>
+            android:id="@+id/senhalogin"/>
 
         <Button
+            android:id="@+id/botaocadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cadastrar"
-            android:backgroundTint="@color/white"
-            android:textColor="#3B84F1"
-            android:padding="18dp"
             android:layout_marginTop="32dp"
-            android:textSize="20sp"
-            android:id="@+id/cadastro_bnt"/>
+            android:backgroundTint="@color/white"
+            android:onClick="telalogin"
+            android:padding="18dp"
+            android:text="Cadastrar"
+            android:textColor="#3B84F1"
+            android:textSize="20sp" />
 
     </LinearLayout>
 

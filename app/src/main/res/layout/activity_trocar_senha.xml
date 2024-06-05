@@ -32,7 +32,7 @@
             android:background="@drawable/arredondar_canto_cadastro"
             android:padding="18dp"
             android:inputType="textPassword"
-            android:id="@+id/password_input"/>
+            android:id="@+id/newsenha"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -45,18 +45,19 @@
             android:background="@drawable/arredondar_canto_cadastro"
             android:padding="18dp"
             android:inputType="textPassword"
-            android:id="@+id/password_toggle"/>
+            android:id="@+id/newsenhaconfirm"/>
 
         <Button
+            android:id="@+id/trocarsenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cadastrar Senha"
-            android:backgroundTint="@color/white"
-            android:textColor="#3B84F1"
-            android:padding="18dp"
             android:layout_marginTop="32dp"
-            android:textSize="20sp"
-            android:id="@+id/trocarsenha_bnt"/>
+            android:backgroundTint="@color/white"
+            android:onClick="voltartelalogin"
+            android:padding="18dp"
+            android:text="Cadastrar Senha"
+            android:textColor="#3B84F1"
+            android:textSize="20sp" />
 
     </LinearLayout>
 

@@ -14,7 +14,7 @@ public class TelaRecuperarSenha extends AppCompatActivity {
         setContentView(R.layout.activity_tela_recuperar_senha);
     }
 
-    public void verificarsenha(View view) {
+    public void verificaremail(View view) {
 
         Intent in = new Intent(TelaRecuperarSenha.this, VerificarEmail.class);
         startActivity(in);

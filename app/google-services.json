@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "362421135296",
+    "project_id": "comercioonlineds-75c19",
+    "storage_bucket": "comercioonlineds-75c19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362421135296:android:f7e3cc52a9528fc41c4a25",
+        "android_client_info": {
+          "package_name": "com.example.comercioonlineds"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": ""
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

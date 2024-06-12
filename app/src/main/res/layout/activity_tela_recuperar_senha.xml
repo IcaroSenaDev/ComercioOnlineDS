@@ -31,19 +31,19 @@
             android:textSize="20sp"
             android:background="@drawable/arredondar_canto_cadastro"
             android:padding="18dp"
-            android:inputType="textPassword"
-            android:id="@+id/codigo"/>
+            android:inputType="text"
+            android:id="@+id/emailrecuperar"/>
 
 
         <Button
-            android:id="@+id/prosseguir"
+            android:id="@+id/enviaremail_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:backgroundTint="@color/white"
-            android:onClick="verificaremail"
+            android:onClick="telaloginvolta"
             android:padding="18dp"
-            android:text="Prosseguir"
+            android:text="Enviar email"
             android:textColor="#3B84F1"
             android:textSize="20sp" />
 

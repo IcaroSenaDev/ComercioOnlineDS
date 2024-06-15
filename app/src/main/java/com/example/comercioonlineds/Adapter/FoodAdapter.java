@@ -2,12 +2,10 @@ package com.example.comercioonlineds.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.comercioonlineds.databinding.FoodItemBinding;
 import com.example.comercioonlineds.model.Food;
 
@@ -31,11 +29,9 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
         return new FoodViewHolder(listItem);
     }
 
-
-
     @Override
     public void onBindViewHolder(@NonNull FoodViewHolder holder, int position) {
-        holder.binding.imgFood.setBackgroundResource(foodList.get(position).getImgFood());
+        holder.binding.imgFood.setImageResource(foodList.get(position).getImgFood());
         holder.binding.txtFoodName.setText(foodList.get(position).getFoodName());
         holder.binding.txtFoodDescription.setText(foodList.get(position).getFoodDescription());
         holder.binding.txtPrice.setText(foodList.get(position).getPrice());
@@ -45,7 +41,6 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
     public int getItemCount() {
         return foodList.size();
     }
-
 
     public static class FoodViewHolder extends RecyclerView.ViewHolder{
 

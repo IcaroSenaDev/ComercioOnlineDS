@@ -1,10 +1,10 @@
 package com.example.comercioonlineds;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
 
 import com.example.comercioonlineds.Adapter.FoodAdapter;
 import com.example.comercioonlineds.databinding.ActivityTelaProdutosServicosBinding;
@@ -18,10 +18,11 @@ public class TelaProdutosServicos extends AppCompatActivity {
     private FoodAdapter foodAdapter;
     private ArrayList<Food> foodList = new ArrayList<>();
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         binding = ActivityTelaProdutosServicosBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -34,42 +35,45 @@ public class TelaProdutosServicos extends AppCompatActivity {
         getFood();
     }
 
-    private void getFood(){
+    private void getFood() {
 
         Food food1 = new Food(
-            R.drawable.food1,
-                "Food 1",
-                "se vira ae jv nrml",
-                "$ 40.0"
+                R.drawable.food1,
+                "Frango com batata frita",
+                "Batata colhida nas maiores montanhas e frita em vulcões! E frango.",
+                "$ 50.0"
         );
         foodList.add(food1);
 
         Food food2 = new Food(
-                R.drawable.food1,
-                "Food 1",
-                "se vira ae jv nrml",
-                "$ 40.0"
+                R.drawable.food2,
+                "Japa",
+                "A melhor comida japonesa que você encontrará no planeta!",
+                "$ 100.0"
         );
         foodList.add(food2);
+
         Food food3 = new Food(
                 R.drawable.food3,
-                "Food 1",
-                "se vira ae jv nrml",
-                "$ 40.0"
+                "Prato da casa",
+                "Uma mistura de sabores!",
+                "$ 299.0"
         );
         foodList.add(food3);
+
         Food food4 = new Food(
                 R.drawable.food4,
-                "Food 1",
-                "se vira ae jv nrml",
-                "$ 40.0"
+                "Arroz com acompanhamentos!",
+                "O melhor da região",
+                "$ 90.0"
         );
         foodList.add(food4);
+
         Food food5 = new Food(
                 R.drawable.food5,
-                "Food 1",
-                "se vira ae jv nrml",
-                "$ 40.0"
+                "Macarrão",
+                "A melhor massa da Itália!",
+                "$ 70.0"
         );
         foodList.add(food5);
     }

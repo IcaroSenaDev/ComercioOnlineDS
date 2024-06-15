@@ -13,12 +13,6 @@
         android:theme="@style/Theme.ComercioOnlineDS"
         tools:targetApi="31">
         <activity
-            android:name=".VerificarEmail"
-            android:exported="false" />
-        <activity
-            android:name=".TrocarSenha"
-            android:exported="false" />
-        <activity
             android:name=".TelaRecuperarSenha"
             android:exported="false" />
         <activity

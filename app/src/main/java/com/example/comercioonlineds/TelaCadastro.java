@@ -55,7 +55,7 @@ public class TelaCadastro extends AppCompatActivity {
                                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                                         if(task.isSuccessful()){
-                                            telaprodutos();
+                                            telalogin();
                                         }
                                         else {
                                             String error = task.getException().getMessage();
@@ -72,9 +72,9 @@ public class TelaCadastro extends AppCompatActivity {
         });
     }
 
-    public void telaprodutos () {
+    public void telalogin () {
 
-        Intent in = new Intent(TelaCadastro.this, TelaProdutosServicos.class);
+        Intent in = new Intent(TelaCadastro.this, TelaLogin.class);
         startActivity(in);
         finish();
 
